@@ -1,0 +1,20 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use work.lib.all;
+
+entity XOR_2 is
+    port(I0, I1 : in std_logic;
+   	 O0 : out std_logic);
+end XOR_2;
+
+architecture STRUCTURE of XOR_2 is
+
+signal S1,S2,S3: std_logic;
+
+begin
+    U0: OR_2 port map(I0,I1,S1);
+    U1: AND_2 port map(I0,I1,S2);
+    U2: NOT_1 port map(S2,S3);
+    U3: AND_2 port map(S1,S3,O0);
+
+end STRUCTURE;

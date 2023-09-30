@@ -1,0 +1,1342 @@
+|hamcorrection
+DU[7] => XOR_2:X7.I0
+DU[7] => parity_checker9:U1.I[1]
+DU[7] => parity_checker9:U2.I[1]
+DU[7] => parity_checker9:U3.I[1]
+DU[6] => XOR_2:X6.I0
+DU[6] => parity_checker9:U2.I[2]
+DU[6] => parity_checker9:U3.I[2]
+DU[5] => XOR_2:X5.I0
+DU[5] => parity_checker9:U1.I[2]
+DU[5] => parity_checker9:U3.I[3]
+DU[4] => XOR_2:X4.I0
+DU[4] => parity_checker9:U3.I[4]
+DU[3] => XOR_2:X3.I0
+DU[3] => parity_checker9:U1.I[3]
+DU[3] => parity_checker9:U2.I[3]
+DU[2] => XOR_2:X2.I0
+DU[2] => parity_checker9:U2.I[4]
+DU[1] => XOR_2:X1.I0
+DU[1] => parity_checker9:U1.I[4]
+DC[7] << NOT_1:XN7.O0
+DC[6] << NOT_1:XN6.O0
+DC[5] << NOT_1:XN5.O0
+DC[4] << NOT_1:XN4.O0
+DC[3] << NOT_1:XN3.O0
+DC[2] << NOT_1:XN2.O0
+DC[1] << NOT_1:XN1.O0
+NERROR << decode3_8:V1.Y_L[0]
+
+
+|hamcorrection|parity_checker9:U1
+I[9] => XOR_2:U6.I1
+I[8] => XOR_2:U5.I1
+I[7] => XOR_2:U5.I0
+I[6] => XOR_2:U4.I1
+I[5] => XOR_2:U3.I1
+I[4] => XOR_2:U3.I0
+I[3] => XOR_2:U2.I1
+I[2] => XOR_2:U1.I1
+I[1] => XOR_2:U1.I0
+EVEN <= XOR_2:U8.O0
+ODD <= XOR_2:U10.O0
+
+
+|hamcorrection|parity_checker9:U1|XOR_2:U1
+I0 => OR_2:U0.I0
+I0 => AND_2:U1.I0
+I1 => OR_2:U0.I1
+I1 => AND_2:U1.I1
+O0 <= AND_2:U3.O0
+
+
+|hamcorrection|parity_checker9:U1|XOR_2:U1|OR_2:U0
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U1|XOR_2:U1|AND_2:U1
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U1|XOR_2:U1|NOT_1:U2
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U1|XOR_2:U1|AND_2:U3
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U1|XOR_2:U2
+I0 => OR_2:U0.I0
+I0 => AND_2:U1.I0
+I1 => OR_2:U0.I1
+I1 => AND_2:U1.I1
+O0 <= AND_2:U3.O0
+
+
+|hamcorrection|parity_checker9:U1|XOR_2:U2|OR_2:U0
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U1|XOR_2:U2|AND_2:U1
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U1|XOR_2:U2|NOT_1:U2
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U1|XOR_2:U2|AND_2:U3
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U1|XOR_2:U3
+I0 => OR_2:U0.I0
+I0 => AND_2:U1.I0
+I1 => OR_2:U0.I1
+I1 => AND_2:U1.I1
+O0 <= AND_2:U3.O0
+
+
+|hamcorrection|parity_checker9:U1|XOR_2:U3|OR_2:U0
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U1|XOR_2:U3|AND_2:U1
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U1|XOR_2:U3|NOT_1:U2
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U1|XOR_2:U3|AND_2:U3
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U1|XOR_2:U4
+I0 => OR_2:U0.I0
+I0 => AND_2:U1.I0
+I1 => OR_2:U0.I1
+I1 => AND_2:U1.I1
+O0 <= AND_2:U3.O0
+
+
+|hamcorrection|parity_checker9:U1|XOR_2:U4|OR_2:U0
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U1|XOR_2:U4|AND_2:U1
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U1|XOR_2:U4|NOT_1:U2
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U1|XOR_2:U4|AND_2:U3
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U1|XOR_2:U5
+I0 => OR_2:U0.I0
+I0 => AND_2:U1.I0
+I1 => OR_2:U0.I1
+I1 => AND_2:U1.I1
+O0 <= AND_2:U3.O0
+
+
+|hamcorrection|parity_checker9:U1|XOR_2:U5|OR_2:U0
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U1|XOR_2:U5|AND_2:U1
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U1|XOR_2:U5|NOT_1:U2
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U1|XOR_2:U5|AND_2:U3
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U1|XOR_2:U6
+I0 => OR_2:U0.I0
+I0 => AND_2:U1.I0
+I1 => OR_2:U0.I1
+I1 => AND_2:U1.I1
+O0 <= AND_2:U3.O0
+
+
+|hamcorrection|parity_checker9:U1|XOR_2:U6|OR_2:U0
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U1|XOR_2:U6|AND_2:U1
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U1|XOR_2:U6|NOT_1:U2
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U1|XOR_2:U6|AND_2:U3
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U1|NOT_1:N1
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U1|XOR_2:U7
+I0 => OR_2:U0.I0
+I0 => AND_2:U1.I0
+I1 => OR_2:U0.I1
+I1 => AND_2:U1.I1
+O0 <= AND_2:U3.O0
+
+
+|hamcorrection|parity_checker9:U1|XOR_2:U7|OR_2:U0
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U1|XOR_2:U7|AND_2:U1
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U1|XOR_2:U7|NOT_1:U2
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U1|XOR_2:U7|AND_2:U3
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U1|XOR_2:U8
+I0 => OR_2:U0.I0
+I0 => AND_2:U1.I0
+I1 => OR_2:U0.I1
+I1 => AND_2:U1.I1
+O0 <= AND_2:U3.O0
+
+
+|hamcorrection|parity_checker9:U1|XOR_2:U8|OR_2:U0
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U1|XOR_2:U8|AND_2:U1
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U1|XOR_2:U8|NOT_1:U2
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U1|XOR_2:U8|AND_2:U3
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U1|XOR_2:U9
+I0 => OR_2:U0.I0
+I0 => AND_2:U1.I0
+I1 => OR_2:U0.I1
+I1 => AND_2:U1.I1
+O0 <= AND_2:U3.O0
+
+
+|hamcorrection|parity_checker9:U1|XOR_2:U9|OR_2:U0
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U1|XOR_2:U9|AND_2:U1
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U1|XOR_2:U9|NOT_1:U2
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U1|XOR_2:U9|AND_2:U3
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U1|XOR_2:U10
+I0 => OR_2:U0.I0
+I0 => AND_2:U1.I0
+I1 => OR_2:U0.I1
+I1 => AND_2:U1.I1
+O0 <= AND_2:U3.O0
+
+
+|hamcorrection|parity_checker9:U1|XOR_2:U10|OR_2:U0
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U1|XOR_2:U10|AND_2:U1
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U1|XOR_2:U10|NOT_1:U2
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U1|XOR_2:U10|AND_2:U3
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U2
+I[9] => XOR_2:U6.I1
+I[8] => XOR_2:U5.I1
+I[7] => XOR_2:U5.I0
+I[6] => XOR_2:U4.I1
+I[5] => XOR_2:U3.I1
+I[4] => XOR_2:U3.I0
+I[3] => XOR_2:U2.I1
+I[2] => XOR_2:U1.I1
+I[1] => XOR_2:U1.I0
+EVEN <= XOR_2:U8.O0
+ODD <= XOR_2:U10.O0
+
+
+|hamcorrection|parity_checker9:U2|XOR_2:U1
+I0 => OR_2:U0.I0
+I0 => AND_2:U1.I0
+I1 => OR_2:U0.I1
+I1 => AND_2:U1.I1
+O0 <= AND_2:U3.O0
+
+
+|hamcorrection|parity_checker9:U2|XOR_2:U1|OR_2:U0
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U2|XOR_2:U1|AND_2:U1
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U2|XOR_2:U1|NOT_1:U2
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U2|XOR_2:U1|AND_2:U3
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U2|XOR_2:U2
+I0 => OR_2:U0.I0
+I0 => AND_2:U1.I0
+I1 => OR_2:U0.I1
+I1 => AND_2:U1.I1
+O0 <= AND_2:U3.O0
+
+
+|hamcorrection|parity_checker9:U2|XOR_2:U2|OR_2:U0
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U2|XOR_2:U2|AND_2:U1
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U2|XOR_2:U2|NOT_1:U2
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U2|XOR_2:U2|AND_2:U3
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U2|XOR_2:U3
+I0 => OR_2:U0.I0
+I0 => AND_2:U1.I0
+I1 => OR_2:U0.I1
+I1 => AND_2:U1.I1
+O0 <= AND_2:U3.O0
+
+
+|hamcorrection|parity_checker9:U2|XOR_2:U3|OR_2:U0
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U2|XOR_2:U3|AND_2:U1
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U2|XOR_2:U3|NOT_1:U2
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U2|XOR_2:U3|AND_2:U3
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U2|XOR_2:U4
+I0 => OR_2:U0.I0
+I0 => AND_2:U1.I0
+I1 => OR_2:U0.I1
+I1 => AND_2:U1.I1
+O0 <= AND_2:U3.O0
+
+
+|hamcorrection|parity_checker9:U2|XOR_2:U4|OR_2:U0
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U2|XOR_2:U4|AND_2:U1
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U2|XOR_2:U4|NOT_1:U2
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U2|XOR_2:U4|AND_2:U3
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U2|XOR_2:U5
+I0 => OR_2:U0.I0
+I0 => AND_2:U1.I0
+I1 => OR_2:U0.I1
+I1 => AND_2:U1.I1
+O0 <= AND_2:U3.O0
+
+
+|hamcorrection|parity_checker9:U2|XOR_2:U5|OR_2:U0
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U2|XOR_2:U5|AND_2:U1
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U2|XOR_2:U5|NOT_1:U2
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U2|XOR_2:U5|AND_2:U3
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U2|XOR_2:U6
+I0 => OR_2:U0.I0
+I0 => AND_2:U1.I0
+I1 => OR_2:U0.I1
+I1 => AND_2:U1.I1
+O0 <= AND_2:U3.O0
+
+
+|hamcorrection|parity_checker9:U2|XOR_2:U6|OR_2:U0
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U2|XOR_2:U6|AND_2:U1
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U2|XOR_2:U6|NOT_1:U2
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U2|XOR_2:U6|AND_2:U3
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U2|NOT_1:N1
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U2|XOR_2:U7
+I0 => OR_2:U0.I0
+I0 => AND_2:U1.I0
+I1 => OR_2:U0.I1
+I1 => AND_2:U1.I1
+O0 <= AND_2:U3.O0
+
+
+|hamcorrection|parity_checker9:U2|XOR_2:U7|OR_2:U0
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U2|XOR_2:U7|AND_2:U1
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U2|XOR_2:U7|NOT_1:U2
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U2|XOR_2:U7|AND_2:U3
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U2|XOR_2:U8
+I0 => OR_2:U0.I0
+I0 => AND_2:U1.I0
+I1 => OR_2:U0.I1
+I1 => AND_2:U1.I1
+O0 <= AND_2:U3.O0
+
+
+|hamcorrection|parity_checker9:U2|XOR_2:U8|OR_2:U0
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U2|XOR_2:U8|AND_2:U1
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U2|XOR_2:U8|NOT_1:U2
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U2|XOR_2:U8|AND_2:U3
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U2|XOR_2:U9
+I0 => OR_2:U0.I0
+I0 => AND_2:U1.I0
+I1 => OR_2:U0.I1
+I1 => AND_2:U1.I1
+O0 <= AND_2:U3.O0
+
+
+|hamcorrection|parity_checker9:U2|XOR_2:U9|OR_2:U0
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U2|XOR_2:U9|AND_2:U1
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U2|XOR_2:U9|NOT_1:U2
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U2|XOR_2:U9|AND_2:U3
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U2|XOR_2:U10
+I0 => OR_2:U0.I0
+I0 => AND_2:U1.I0
+I1 => OR_2:U0.I1
+I1 => AND_2:U1.I1
+O0 <= AND_2:U3.O0
+
+
+|hamcorrection|parity_checker9:U2|XOR_2:U10|OR_2:U0
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U2|XOR_2:U10|AND_2:U1
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U2|XOR_2:U10|NOT_1:U2
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U2|XOR_2:U10|AND_2:U3
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U3
+I[9] => XOR_2:U6.I1
+I[8] => XOR_2:U5.I1
+I[7] => XOR_2:U5.I0
+I[6] => XOR_2:U4.I1
+I[5] => XOR_2:U3.I1
+I[4] => XOR_2:U3.I0
+I[3] => XOR_2:U2.I1
+I[2] => XOR_2:U1.I1
+I[1] => XOR_2:U1.I0
+EVEN <= XOR_2:U8.O0
+ODD <= XOR_2:U10.O0
+
+
+|hamcorrection|parity_checker9:U3|XOR_2:U1
+I0 => OR_2:U0.I0
+I0 => AND_2:U1.I0
+I1 => OR_2:U0.I1
+I1 => AND_2:U1.I1
+O0 <= AND_2:U3.O0
+
+
+|hamcorrection|parity_checker9:U3|XOR_2:U1|OR_2:U0
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U3|XOR_2:U1|AND_2:U1
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U3|XOR_2:U1|NOT_1:U2
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U3|XOR_2:U1|AND_2:U3
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U3|XOR_2:U2
+I0 => OR_2:U0.I0
+I0 => AND_2:U1.I0
+I1 => OR_2:U0.I1
+I1 => AND_2:U1.I1
+O0 <= AND_2:U3.O0
+
+
+|hamcorrection|parity_checker9:U3|XOR_2:U2|OR_2:U0
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U3|XOR_2:U2|AND_2:U1
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U3|XOR_2:U2|NOT_1:U2
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U3|XOR_2:U2|AND_2:U3
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U3|XOR_2:U3
+I0 => OR_2:U0.I0
+I0 => AND_2:U1.I0
+I1 => OR_2:U0.I1
+I1 => AND_2:U1.I1
+O0 <= AND_2:U3.O0
+
+
+|hamcorrection|parity_checker9:U3|XOR_2:U3|OR_2:U0
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U3|XOR_2:U3|AND_2:U1
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U3|XOR_2:U3|NOT_1:U2
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U3|XOR_2:U3|AND_2:U3
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U3|XOR_2:U4
+I0 => OR_2:U0.I0
+I0 => AND_2:U1.I0
+I1 => OR_2:U0.I1
+I1 => AND_2:U1.I1
+O0 <= AND_2:U3.O0
+
+
+|hamcorrection|parity_checker9:U3|XOR_2:U4|OR_2:U0
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U3|XOR_2:U4|AND_2:U1
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U3|XOR_2:U4|NOT_1:U2
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U3|XOR_2:U4|AND_2:U3
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U3|XOR_2:U5
+I0 => OR_2:U0.I0
+I0 => AND_2:U1.I0
+I1 => OR_2:U0.I1
+I1 => AND_2:U1.I1
+O0 <= AND_2:U3.O0
+
+
+|hamcorrection|parity_checker9:U3|XOR_2:U5|OR_2:U0
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U3|XOR_2:U5|AND_2:U1
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U3|XOR_2:U5|NOT_1:U2
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U3|XOR_2:U5|AND_2:U3
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U3|XOR_2:U6
+I0 => OR_2:U0.I0
+I0 => AND_2:U1.I0
+I1 => OR_2:U0.I1
+I1 => AND_2:U1.I1
+O0 <= AND_2:U3.O0
+
+
+|hamcorrection|parity_checker9:U3|XOR_2:U6|OR_2:U0
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U3|XOR_2:U6|AND_2:U1
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U3|XOR_2:U6|NOT_1:U2
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U3|XOR_2:U6|AND_2:U3
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U3|NOT_1:N1
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U3|XOR_2:U7
+I0 => OR_2:U0.I0
+I0 => AND_2:U1.I0
+I1 => OR_2:U0.I1
+I1 => AND_2:U1.I1
+O0 <= AND_2:U3.O0
+
+
+|hamcorrection|parity_checker9:U3|XOR_2:U7|OR_2:U0
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U3|XOR_2:U7|AND_2:U1
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U3|XOR_2:U7|NOT_1:U2
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U3|XOR_2:U7|AND_2:U3
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U3|XOR_2:U8
+I0 => OR_2:U0.I0
+I0 => AND_2:U1.I0
+I1 => OR_2:U0.I1
+I1 => AND_2:U1.I1
+O0 <= AND_2:U3.O0
+
+
+|hamcorrection|parity_checker9:U3|XOR_2:U8|OR_2:U0
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U3|XOR_2:U8|AND_2:U1
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U3|XOR_2:U8|NOT_1:U2
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U3|XOR_2:U8|AND_2:U3
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U3|XOR_2:U9
+I0 => OR_2:U0.I0
+I0 => AND_2:U1.I0
+I1 => OR_2:U0.I1
+I1 => AND_2:U1.I1
+O0 <= AND_2:U3.O0
+
+
+|hamcorrection|parity_checker9:U3|XOR_2:U9|OR_2:U0
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U3|XOR_2:U9|AND_2:U1
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U3|XOR_2:U9|NOT_1:U2
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U3|XOR_2:U9|AND_2:U3
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U3|XOR_2:U10
+I0 => OR_2:U0.I0
+I0 => AND_2:U1.I0
+I1 => OR_2:U0.I1
+I1 => AND_2:U1.I1
+O0 <= AND_2:U3.O0
+
+
+|hamcorrection|parity_checker9:U3|XOR_2:U10|OR_2:U0
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U3|XOR_2:U10|AND_2:U1
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U3|XOR_2:U10|NOT_1:U2
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|parity_checker9:U3|XOR_2:U10|AND_2:U3
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|decode3_8:V1
+G1 => Y_L.IN0
+G2A_L => Y_L.IN1
+G2B_L => Y_L.IN1
+A[0] => Mux0.IN10
+A[0] => Mux1.IN10
+A[0] => Mux2.IN10
+A[0] => Mux3.IN10
+A[0] => Mux4.IN10
+A[0] => Mux5.IN10
+A[0] => Mux6.IN10
+A[0] => Mux7.IN10
+A[1] => Mux0.IN9
+A[1] => Mux1.IN9
+A[1] => Mux2.IN9
+A[1] => Mux3.IN9
+A[1] => Mux4.IN9
+A[1] => Mux5.IN9
+A[1] => Mux6.IN9
+A[1] => Mux7.IN9
+A[2] => Mux0.IN8
+A[2] => Mux1.IN8
+A[2] => Mux2.IN8
+A[2] => Mux3.IN8
+A[2] => Mux4.IN8
+A[2] => Mux5.IN8
+A[2] => Mux6.IN8
+A[2] => Mux7.IN8
+Y_L[7] <= Y_L.DB_MAX_OUTPUT_PORT_TYPE
+Y_L[6] <= Y_L.DB_MAX_OUTPUT_PORT_TYPE
+Y_L[5] <= Y_L.DB_MAX_OUTPUT_PORT_TYPE
+Y_L[4] <= Y_L.DB_MAX_OUTPUT_PORT_TYPE
+Y_L[3] <= Y_L.DB_MAX_OUTPUT_PORT_TYPE
+Y_L[2] <= Y_L.DB_MAX_OUTPUT_PORT_TYPE
+Y_L[1] <= Y_L.DB_MAX_OUTPUT_PORT_TYPE
+Y_L[0] <= Y_L.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|NOT_1:N1
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|NOT_1:N2
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|NOT_1:N3
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|NOT_1:N4
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|NOT_1:N5
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|NOT_1:N6
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|NOT_1:N7
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|XOR_2:X1
+I0 => OR_2:U0.I0
+I0 => AND_2:U1.I0
+I1 => OR_2:U0.I1
+I1 => AND_2:U1.I1
+O0 <= AND_2:U3.O0
+
+
+|hamcorrection|XOR_2:X1|OR_2:U0
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|XOR_2:X1|AND_2:U1
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|XOR_2:X1|NOT_1:U2
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|XOR_2:X1|AND_2:U3
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|XOR_2:X2
+I0 => OR_2:U0.I0
+I0 => AND_2:U1.I0
+I1 => OR_2:U0.I1
+I1 => AND_2:U1.I1
+O0 <= AND_2:U3.O0
+
+
+|hamcorrection|XOR_2:X2|OR_2:U0
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|XOR_2:X2|AND_2:U1
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|XOR_2:X2|NOT_1:U2
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|XOR_2:X2|AND_2:U3
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|XOR_2:X3
+I0 => OR_2:U0.I0
+I0 => AND_2:U1.I0
+I1 => OR_2:U0.I1
+I1 => AND_2:U1.I1
+O0 <= AND_2:U3.O0
+
+
+|hamcorrection|XOR_2:X3|OR_2:U0
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|XOR_2:X3|AND_2:U1
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|XOR_2:X3|NOT_1:U2
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|XOR_2:X3|AND_2:U3
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|XOR_2:X4
+I0 => OR_2:U0.I0
+I0 => AND_2:U1.I0
+I1 => OR_2:U0.I1
+I1 => AND_2:U1.I1
+O0 <= AND_2:U3.O0
+
+
+|hamcorrection|XOR_2:X4|OR_2:U0
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|XOR_2:X4|AND_2:U1
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|XOR_2:X4|NOT_1:U2
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|XOR_2:X4|AND_2:U3
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|XOR_2:X5
+I0 => OR_2:U0.I0
+I0 => AND_2:U1.I0
+I1 => OR_2:U0.I1
+I1 => AND_2:U1.I1
+O0 <= AND_2:U3.O0
+
+
+|hamcorrection|XOR_2:X5|OR_2:U0
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|XOR_2:X5|AND_2:U1
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|XOR_2:X5|NOT_1:U2
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|XOR_2:X5|AND_2:U3
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|XOR_2:X6
+I0 => OR_2:U0.I0
+I0 => AND_2:U1.I0
+I1 => OR_2:U0.I1
+I1 => AND_2:U1.I1
+O0 <= AND_2:U3.O0
+
+
+|hamcorrection|XOR_2:X6|OR_2:U0
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|XOR_2:X6|AND_2:U1
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|XOR_2:X6|NOT_1:U2
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|XOR_2:X6|AND_2:U3
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|XOR_2:X7
+I0 => OR_2:U0.I0
+I0 => AND_2:U1.I0
+I1 => OR_2:U0.I1
+I1 => AND_2:U1.I1
+O0 <= AND_2:U3.O0
+
+
+|hamcorrection|XOR_2:X7|OR_2:U0
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|XOR_2:X7|AND_2:U1
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|XOR_2:X7|NOT_1:U2
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|XOR_2:X7|AND_2:U3
+I0 => O0.IN0
+I1 => O0.IN1
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|NOT_1:XN1
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|NOT_1:XN2
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|NOT_1:XN3
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|NOT_1:XN4
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|NOT_1:XN5
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|NOT_1:XN6
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hamcorrection|NOT_1:XN7
+I0 => O0.DATAIN
+O0 <= I0.DB_MAX_OUTPUT_PORT_TYPE
+
+

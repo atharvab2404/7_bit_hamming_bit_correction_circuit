@@ -1,0 +1,326 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Atharva Bhawsar/OneDrive/Desktop/Digiproj1/simulation/modelsim
+Eand_2
+Z1 w1689739987
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R0
+Z4 8C:/Users/Atharva Bhawsar/OneDrive/Desktop/Digiproj1/AND_2.vhd
+Z5 FC:/Users/Atharva Bhawsar/OneDrive/Desktop/Digiproj1/AND_2.vhd
+l0
+L4 1
+Vk_6N4ZD7^I?h0BQZ^@faQ2
+!s100 [a]]_QznU^Ca<Q_AJc?ZO1
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1690369620
+!i10b 1
+Z8 !s108 1690369620.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Atharva Bhawsar/OneDrive/Desktop/Digiproj1/AND_2.vhd|
+Z10 !s107 C:/Users/Atharva Bhawsar/OneDrive/Desktop/Digiproj1/AND_2.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Afunctionality
+R2
+R3
+DEx4 work 5 and_2 0 22 k_6N4ZD7^I?h0BQZ^@faQ2
+!i122 0
+l10
+L9 4
+V44DE[Wl<500UezJT<6hm91
+!s100 TZL>@c>V]77<H0cce7nnb0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Edecode3_8
+Z13 w1689746013
+R2
+R3
+!i122 4
+R0
+Z14 8C:/Users/Atharva Bhawsar/OneDrive/Desktop/Digiproj1/decode3_8.vhd
+Z15 FC:/Users/Atharva Bhawsar/OneDrive/Desktop/Digiproj1/decode3_8.vhd
+l0
+L4 1
+Vc1?<SRFlEEnb[ESR`aZSi3
+!s100 IVXajeBFPOFPaTBG>nVzB0
+R6
+31
+Z16 !s110 1690369621
+!i10b 1
+Z17 !s108 1690369621.000000
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/Atharva Bhawsar/OneDrive/Desktop/Digiproj1/decode3_8.vhd|
+Z19 !s107 C:/Users/Atharva Bhawsar/OneDrive/Desktop/Digiproj1/decode3_8.vhd|
+!i113 1
+R11
+R12
+Adecode3_8_a
+R2
+R3
+DEx4 work 9 decode3_8 0 22 c1?<SRFlEEnb[ESR`aZSi3
+!i122 4
+l14
+L10 17
+V]VVSdJhGj`JiZK51`4EoX3
+!s100 ]f;M:oPRnJZhX:^NS;oJj0
+R6
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12
+Ehamcorrection
+Z20 w1689748795
+Z21 DPx4 work 3 lib 0 22 ^Y@mhI>cLGi7JUkXi<4bC1
+R2
+R3
+!i122 7
+R0
+Z22 8C:/Users/Atharva Bhawsar/OneDrive/Desktop/Digiproj1/hamcorrection.vhd
+Z23 FC:/Users/Atharva Bhawsar/OneDrive/Desktop/Digiproj1/hamcorrection.vhd
+l0
+L5 1
+V=CJPXM[hl14z;f9?mgHI[1
+!s100 Cnk`EKED0c:abScX?PahV3
+R6
+31
+R16
+!i10b 1
+R17
+Z24 !s90 -reportprogress|300|-93|-work|work|C:/Users/Atharva Bhawsar/OneDrive/Desktop/Digiproj1/hamcorrection.vhd|
+!s107 C:/Users/Atharva Bhawsar/OneDrive/Desktop/Digiproj1/hamcorrection.vhd|
+!i113 1
+R11
+R12
+Astructure
+R21
+R2
+R3
+DEx4 work 13 hamcorrection 0 22 =CJPXM[hl14z;f9?mgHI[1
+!i122 7
+l23
+L13 77
+Vm3zLO;oV<>CRSa<naXd_^0
+!s100 eBa8iRe^QBI2keH_:EbdP3
+R6
+31
+R16
+!i10b 1
+R17
+R24
+Z25 !s107 C:/Users/Atharva Bhawsar/OneDrive/Desktop/Digiproj1/hamcorrection.vhd|
+!i113 1
+R11
+R12
+Plib
+R2
+R3
+!i122 3
+w1689746677
+R0
+8C:/Users/Atharva Bhawsar/OneDrive/Desktop/Digiproj1/lib.vhd
+FC:/Users/Atharva Bhawsar/OneDrive/Desktop/Digiproj1/lib.vhd
+l0
+L4 1
+V^Y@mhI>cLGi7JUkXi<4bC1
+!s100 >[1bazPOK:me;Cm:CGDi01
+R6
+31
+R16
+!i10b 1
+R17
+!s90 -reportprogress|300|-93|-work|work|C:/Users/Atharva Bhawsar/OneDrive/Desktop/Digiproj1/lib.vhd|
+!s107 C:/Users/Atharva Bhawsar/OneDrive/Desktop/Digiproj1/lib.vhd|
+!i113 1
+R11
+R12
+Enot_1
+Z26 w1689741313
+R2
+R3
+!i122 2
+R0
+Z27 8C:/Users/Atharva Bhawsar/OneDrive/Desktop/Digiproj1/NOT_1.vhd
+Z28 FC:/Users/Atharva Bhawsar/OneDrive/Desktop/Digiproj1/NOT_1.vhd
+l0
+L4 1
+VbVan4XJGSZS^9=7U7WGgL3
+!s100 `NfU`XSPBMeAfeWIV=E>C0
+R6
+31
+R16
+!i10b 1
+R17
+Z29 !s90 -reportprogress|300|-93|-work|work|C:/Users/Atharva Bhawsar/OneDrive/Desktop/Digiproj1/NOT_1.vhd|
+Z30 !s107 C:/Users/Atharva Bhawsar/OneDrive/Desktop/Digiproj1/NOT_1.vhd|
+!i113 1
+R11
+R12
+Afunctionality
+R2
+R3
+DEx4 work 5 not_1 0 22 bVan4XJGSZS^9=7U7WGgL3
+!i122 2
+l10
+L9 4
+V88>Y@j^T1e8<K@PlOZjj@1
+!s100 Q8V2i?nD;G5j;S3>H[m_31
+R6
+31
+R16
+!i10b 1
+R17
+R29
+R30
+!i113 1
+R11
+R12
+Eor_2
+Z31 w1689741194
+R2
+R3
+!i122 1
+R0
+Z32 8C:/Users/Atharva Bhawsar/OneDrive/Desktop/Digiproj1/OR_2.vhd
+Z33 FC:/Users/Atharva Bhawsar/OneDrive/Desktop/Digiproj1/OR_2.vhd
+l0
+L4 1
+VCP?kF1nk>0E]BAmfMdMaT0
+!s100 ?A@>c@3>lB4zRh[fX_m<[3
+R6
+31
+R7
+!i10b 1
+R8
+Z34 !s90 -reportprogress|300|-93|-work|work|C:/Users/Atharva Bhawsar/OneDrive/Desktop/Digiproj1/OR_2.vhd|
+Z35 !s107 C:/Users/Atharva Bhawsar/OneDrive/Desktop/Digiproj1/OR_2.vhd|
+!i113 1
+R11
+R12
+Afunctionality
+R2
+R3
+DEx4 work 4 or_2 0 22 CP?kF1nk>0E]BAmfMdMaT0
+!i122 1
+l10
+L9 4
+VkA2YX^zMe]z7dX49135UI2
+!s100 =1`6FV0<aCJlZZUm4?LZI2
+R6
+31
+R7
+!i10b 1
+R8
+R34
+R35
+!i113 1
+R11
+R12
+Eparity_checker9
+Z36 w1689742641
+R21
+R2
+R3
+!i122 6
+R0
+Z37 8C:/Users/Atharva Bhawsar/OneDrive/Desktop/Digiproj1/parity_checker9.vhd
+Z38 FC:/Users/Atharva Bhawsar/OneDrive/Desktop/Digiproj1/parity_checker9.vhd
+l0
+L5 1
+VlA_T3fQ`2HC7UZV>7jSh41
+!s100 4J=69<hk7h:2@m;J]h_k61
+R6
+31
+R16
+!i10b 1
+R17
+Z39 !s90 -reportprogress|300|-93|-work|work|C:/Users/Atharva Bhawsar/OneDrive/Desktop/Digiproj1/parity_checker9.vhd|
+Z40 !s107 C:/Users/Atharva Bhawsar/OneDrive/Desktop/Digiproj1/parity_checker9.vhd|
+!i113 1
+R11
+R12
+Astructure
+R21
+R2
+R3
+DEx4 work 15 parity_checker9 0 22 lA_T3fQ`2HC7UZV>7jSh41
+!i122 6
+l15
+L11 23
+V[E15JfcXVjSA]dE9cf=EA0
+!s100 2j^2;4Bdz1?7>jVRe4a<23
+R6
+31
+R16
+!i10b 1
+R17
+R39
+R40
+!i113 1
+R11
+R12
+Exor_2
+Z41 w1689741502
+R21
+R2
+R3
+!i122 5
+R0
+Z42 8C:/Users/Atharva Bhawsar/OneDrive/Desktop/Digiproj1/XOR_2.vhd
+Z43 FC:/Users/Atharva Bhawsar/OneDrive/Desktop/Digiproj1/XOR_2.vhd
+l0
+L5 1
+V8?JUgk@B`:DD<n0[fB]0T2
+!s100 fkzFo2hP3A=QGLZ;OT_T^3
+R6
+31
+R16
+!i10b 1
+R17
+Z44 !s90 -reportprogress|300|-93|-work|work|C:/Users/Atharva Bhawsar/OneDrive/Desktop/Digiproj1/XOR_2.vhd|
+Z45 !s107 C:/Users/Atharva Bhawsar/OneDrive/Desktop/Digiproj1/XOR_2.vhd|
+!i113 1
+R11
+R12
+Astructure
+R21
+R2
+R3
+DEx4 work 5 xor_2 0 22 8?JUgk@B`:DD<n0[fB]0T2
+!i122 5
+l14
+L10 11
+VLNFE574UPP<^Bo[HjYUVf3
+!s100 CiSQ_QchDLe8_5^fd<SBB3
+R6
+31
+R16
+!i10b 1
+R17
+R44
+R45
+!i113 1
+R11
+R12

@@ -1,0 +1,92 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use work.lib.all;
+
+entity hamcorrection is
+	port (
+		DU : in STD_LOGIC_VECTOR (1 to 7);
+		DC : out STD_LOGIC_VECTOR (1 to 7);
+		NERROR : out STD_LOGIC
+	);
+end hamcorrection;
+
+architecture STRUCTURE of hamcorrection is
+
+signal EVEN1, EVEN2, EVEN3, ODD1, ODD2, ODD3 : STD_LOGIC;
+signal I1, I2, I3 : STD_LOGIC_VECTOR (1 to 9);
+signal A1 : STD_LOGIC_VECTOR (2 downto 0);
+signal Y : STD_LOGIC_VECTOR(0 to 7);
+signal N, X : STD_LOGIC_VECTOR(1 to 7);
+
+
+
+begin
+	I1(1) <= DU(7);
+	I1(2) <= DU(5);
+	I1(3) <= DU(3);
+	I1(4) <= DU(1);
+	I1(5) <= '0';
+	I1(6) <= '0';
+	I1(7) <= '0';
+	I1(8) <= '0';
+	I1(9) <= '0';
+	
+	I2(1) <= DU(7);
+	I2(2) <= DU(6);
+	I2(3) <= DU(3);
+	I2(4) <= DU(2);
+	I2(5) <= '0';
+	I2(6) <= '0';
+	I2(7) <= '0';
+	I2(8) <= '0';
+	I2(9) <= '0';
+	
+	I3(1) <= DU(7);
+	I3(2) <= DU(6);
+	I3(3) <= DU(5);
+	I3(4) <= DU(4);
+	I3(5) <= '0';
+	I3(6) <= '0';
+	I3(7) <= '0';
+	I3(8) <= '0';
+	I3(9) <= '0';
+	
+	U1 : parity_checker9 port map (I1(1 to 9), EVEN1, ODD1);
+	U2 : parity_checker9 port map (I2(1 to 9), EVEN2, ODD2);
+	U3 : parity_checker9 port map (I3(1 to 9), EVEN3, ODD3);
+	
+	A1(2) <= ODD3;
+	A1(1) <= ODD2;
+	A1(0) <= ODD1;
+	
+	V1 : decode3_8 port map ('1', '0', '0', A1(2 downto 0), Y(0 to 7));
+	
+	NERROR <= Y(0);
+	N1 : NOT_1 port map (Y(1), N(1));
+	N2 : NOT_1 port map (Y(2), N(2));
+	N3 : NOT_1 port map (Y(3), N(3));
+	N4 : NOT_1 port map (Y(4), N(4));
+	N5 : NOT_1 port map (Y(5), N(5));
+	N6 : NOT_1 port map (Y(6), N(6));
+	N7 : NOT_1 port map (Y(7), N(7));
+	
+	X1 : XOR_2 port map (DU(1), N(1), X(1));
+	X2 : XOR_2 port map (DU(2), N(2), X(2));
+	X3 : XOR_2 port map (DU(3), N(3), X(3));
+	X4 : XOR_2 port map (DU(4), N(4), X(4));
+	X5 : XOR_2 port map (DU(5), N(5), X(5));
+	X6 : XOR_2 port map (DU(6), N(6), X(6));
+	X7 : XOR_2 port map (DU(7), N(7), X(7));
+	
+	XN1 : NOT_1 port map (X(1), DC(1));
+	XN2 : NOT_1 port map (X(2), DC(2));
+	XN3 : NOT_1 port map (X(3), DC(3));
+	XN4 : NOT_1 port map (X(4), DC(4));
+	XN5 : NOT_1 port map (X(5), DC(5));
+	XN6 : NOT_1 port map (X(6), DC(6));
+	XN7 : NOT_1 port map (X(7), DC(7));
+	
+end STRUCTURE;
+	
+	
+	

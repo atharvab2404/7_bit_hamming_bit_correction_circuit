@@ -1,0 +1,126 @@
+# Reading pref.tcl
+# do Project1_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/Atharva Bhawsar/OneDrive/Desktop/Digiproj1/AND_2.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:37:00 on Jul 26,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/Atharva Bhawsar/OneDrive/Desktop/Digiproj1/AND_2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity AND_2
+# -- Compiling architecture FUNCTIONALITY of AND_2
+# End time: 16:37:00 on Jul 26,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Atharva Bhawsar/OneDrive/Desktop/Digiproj1/OR_2.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:37:00 on Jul 26,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/Atharva Bhawsar/OneDrive/Desktop/Digiproj1/OR_2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity OR_2
+# -- Compiling architecture FUNCTIONALITY of OR_2
+# End time: 16:37:00 on Jul 26,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Atharva Bhawsar/OneDrive/Desktop/Digiproj1/NOT_1.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:37:01 on Jul 26,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/Atharva Bhawsar/OneDrive/Desktop/Digiproj1/NOT_1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity NOT_1
+# -- Compiling architecture FUNCTIONALITY of NOT_1
+# End time: 16:37:01 on Jul 26,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Atharva Bhawsar/OneDrive/Desktop/Digiproj1/lib.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:37:01 on Jul 26,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/Atharva Bhawsar/OneDrive/Desktop/Digiproj1/lib.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package lib
+# End time: 16:37:01 on Jul 26,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Atharva Bhawsar/OneDrive/Desktop/Digiproj1/decode3_8.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:37:01 on Jul 26,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/Atharva Bhawsar/OneDrive/Desktop/Digiproj1/decode3_8.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity decode3_8
+# -- Compiling architecture decode3_8_a of decode3_8
+# End time: 16:37:01 on Jul 26,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Atharva Bhawsar/OneDrive/Desktop/Digiproj1/XOR_2.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:37:01 on Jul 26,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/Atharva Bhawsar/OneDrive/Desktop/Digiproj1/XOR_2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package lib
+# -- Compiling entity XOR_2
+# -- Compiling architecture STRUCTURE of XOR_2
+# End time: 16:37:01 on Jul 26,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Atharva Bhawsar/OneDrive/Desktop/Digiproj1/parity_checker9.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:37:01 on Jul 26,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/Atharva Bhawsar/OneDrive/Desktop/Digiproj1/parity_checker9.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package lib
+# -- Compiling entity parity_checker9
+# -- Compiling architecture STRUCTURE of parity_checker9
+# End time: 16:37:01 on Jul 26,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Atharva Bhawsar/OneDrive/Desktop/Digiproj1/hamcorrection.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:37:01 on Jul 26,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/Atharva Bhawsar/OneDrive/Desktop/Digiproj1/hamcorrection.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package lib
+# -- Compiling entity hamcorrection
+# -- Compiling architecture STRUCTURE of hamcorrection
+# End time: 16:37:01 on Jul 26,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.hamcorrection
+# vsim work.hamcorrection 
+# Start time: 16:37:13 on Jul 26,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.lib
+# Loading work.hamcorrection(structure)
+# Loading work.parity_checker9(structure)
+# Loading work.xor_2(structure)
+# Loading work.or_2(functionality)
+# Loading work.and_2(functionality)
+# Loading work.not_1(functionality)
+# Loading work.decode3_8(decode3_8_a)
+add wave -position insertpoint  \
+sim:/hamcorrection/DU \
+sim:/hamcorrection/DC \
+sim:/hamcorrection/NERROR \
+sim:/hamcorrection/X
+force -freeze sim:/hamcorrection/DU 1100010 0
+run
+# End time: 16:41:09 on Jul 26,2023, Elapsed time: 0:03:56
+# Errors: 0, Warnings: 0
